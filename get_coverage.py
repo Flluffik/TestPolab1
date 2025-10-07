@@ -17,7 +17,7 @@ def measure_coverage():
     cov.start()
 
     try:
-        print("🧪 Запуск тестов...")
+        print("Запуск тестов...")
         pytest.main(['test_pizza_system.py', '-v'])
     except Exception as e:
         print(f"Ошибка при запуске тестов: {e}")
@@ -50,4 +50,5 @@ def measure_coverage():
 
 
 if __name__ == "__main__":
+
     measure_coverage()
